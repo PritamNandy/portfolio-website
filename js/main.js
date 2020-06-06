@@ -62,6 +62,10 @@ $(document).ready(function () {
 
 });
 
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
+
 $(function() {
     $("#home-link").on('click', function() {
         var position = $("#home-area").offset().top;
